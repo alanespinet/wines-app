@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Wines App (AngularJS & PHP case of study) - Alan Espinet</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css" />
+
+  <!-- Font Awesome and Google Fonts -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+
+  <!-- font-family: 'Open Sans Condensed', sans-serif; -->
+
+  <!-- Own styles -->
+  <link rel="stylesheet" href="css/custom.css" />
+
+</head>
+<body>
+  <header data-0="top:0px" data-400="top:-1000px">
+    <div class="container" data-0="opacity:1" data-100="opacity:0">
+      <h1>Wine Cellar App</h1>
+      <h3>- PHP and AngularJS Example Project. Alan Espinet, Florida Vocational Institute -</h3>
+    </div>
+  </header>
+
+
+
+
+  <!-- EMBEDED ANGULAR.JS STUFF -->
+  <section id="main-content" ng-app="myApp">
+
+    <div id="overlay">
+      <img src="images/wines_back.jpg" alt="">
+    </div>
+
+    <div class="panel-wrapper">
+      <div id="panel" class="container">
+        <div class="row">
+          <div class="col-xs-3 col-md-1"><label for="search">Search</label></div>
+          <div class="col-xs-9 col-md-5"><input type="text" id="search" placeholder="Year to search or * for all data"></div>
+          <div class="col-xs-6 col-md-3"><button type="button" id="search-btn">Search</button></div>
+          <div class="col-xs-6 col-md-3"><button type="button" id="add-btn">Add</button></div>
+        </div><!-- /.row -->
+      </div><!-- /#panel -->
+    </div><!-- /.panel-wrapper -->
+
+    <div id="views" ng-view>
+
+    </div>
+  </section>
+
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js" charset="utf-8"></script>
+
+  <!-- Angular -->
+  <script src="vendor/angular/angular.min.js" charset="utf-8"></script>
+  <script src="vendor/angular/angular-route.min.js" charset="utf-8"></script>
+
+  <!-- Skrollr -->
+  <script src="vendor/skrollr/skrollr.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+
+  <!-- Own Scripts -->
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="wine/simpleWineController.js" charset="utf-8"></script>
+  <script src="wine/wineDirective.js" charset="utf-8"></script>
+  <script src="wine/allwinesController.js" charset="utf-8"></script>
+  <script src="wine/onewineController.js" charset="utf-8"></script>
+  <script src="wine/addController.js" charset="utf-8"></script>
+  <script src="js/config.js" charset="utf-8"></script>
+  <script src="js/behavior.js" charset="utf-8"></script>
+</body>
+</html>

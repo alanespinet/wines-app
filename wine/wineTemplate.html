@@ -1,0 +1,9 @@
+<h2><span>Name:</span> {{ info.name }}</h2>
+<p><span>Year:</span>{{ info.year }}</p>
+<p><span>Grapes:</span>{{ info.grapes }}</p>
+<p><span>Country:</span>{{ info.country }}</p>
+<p><span>Region:</span>{{ info.region }}</p>
+<p><span>Description:</span>{{ info.description }}</p>
+<p><span>Image:</span><a ng-href="http://localhost/WinesAPI/images/{{info.picture}}" class="wine-image">click to show</a></p>
+<br>
+<p><a href="#" id="delete-wine" ng-click="delete( info.id )">Delete</a></p>

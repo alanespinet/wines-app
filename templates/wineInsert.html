@@ -1,0 +1,53 @@
+<div id="insert-wine">
+  <div class="container">
+      <h1>Insert a new Wine</h1>
+      <div class="controls">
+        <div> <p>Name:</p> </div>
+        <div> <input type="text" id="wine-name" ng-model="name" placeholder="Say the NAME of your wine..."> </div>
+      </div>
+
+      <!-- year -->
+      <div class="controls">
+        <div> <p>Year:</p> </div>
+        <div> <input type="text" id="wine-year" ng-model="year" placeholder="Say the YEAR of your wine..."> </div>
+      </div>
+
+      <!-- grapes -->
+      <div class="controls">
+        <div> <p>Grapes:</p> </div>
+        <div> <input type="text" id="wine-grapes" ng-model="grapes" placeholder="Say the GRAPES of your wine..."> </div>
+      </div>
+
+      <!-- country -->
+      <div class="controls">
+        <div> <p>Country:</p> </div>
+        <div> <input type="text" id="wine-country" ng-model="country" placeholder="Say the COUNTRY of your wine..."> </div>
+      </div>
+
+      <!-- region -->
+      <div class="controls">
+        <div> <p>Region:</p> </div>
+        <div> <input type="text" id="wine-region" ng-model="region" placeholder="Say the REGION of your wine..."> </div>
+      </div>
+
+      <!-- picture -->
+      <div class="controls">
+        <div> <p>Picture:</p> </div>
+        <div> <input type="text" id="wine-picture" ng-model="picture" placeholder="Say the PICTURE of your wine..."> </div>
+      </div>
+
+      <!-- description -->
+      <div class="controls">
+        <div> <p>Description:</p> </div>
+        <div> <textarea rows="8" cols="80" id="wine-description" ng-model="description" placeholder="Say the DESCRIPTION of your wine..."></textarea> </div>
+      </div>
+
+      <!-- submit -->
+      <div class="controls">
+        <div> <p><a href="#!/wines">Go Back...</a></p> </div>
+        <div> <button type="button" id="add-wine-button" ng-click="postData()">Add</button> </div>
+      </div>
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div><!-- /#insert-wine -->
